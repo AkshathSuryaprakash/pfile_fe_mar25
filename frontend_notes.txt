@@ -1,0 +1,43 @@
+BOOTSTRAP JS AND REACT NOTES
+day1 monday 17-03-2025
+
+STEPS TO CREATE NEW REPOSITORY:
+1-login to github
+2-click on right top (+)symbol select new repo
+3-give repo name and write description(optional)
+4-make a repo has public (deafault)
+5-select readme checkbox
+6-click create button
+
+COMMAND TO DOWLOAD ANY PUBLIC REPO:
+$ git clone https://github.com/AkshathSuryaprakash/pfile_fe_mar25
+The above clones command copies git repo from server(cloud)to local machine 
+Thus, we get a folder of the repo 
+ 
+$ git status 
+the above cmd is to check status of the remote repo with respect to local repo
+
+$ git pull origin <branch name>
+$ git pull origin main
+the above cmd pull(dowloads)files from the server to the local .only the files which are not updated are pulled 
+  
+STEPS TO CREATE PERSONAL ACCESS TOKENS (PAT)
+1-top right most corner click on profile icon
+2-in the list of options click on settings 
+3-in the new window scroll down little bit click on developer settings 
+4-on the left corner personal access token slect tokens classic
+5-in the new window click the botton generate token and select token classic 
+6-in the new window add the relavent note 
+7-click expirey select not expiry
+8-select the checkbox repo
+9- scroll down fully and click generate tokens 
+10-copy the token mail it to yourself
+save the pat nowhere else
+	
+To do the operation on our repo from an specific computer the git should recognise our git acc on the system
+To do this we have to run two configaration cmd 
+$ git config --global user.name "AkshathSuryaprakash" 
+$ git config --global user.email "akshathdeepa1978@gmail.com" 
+
+COMMAND TO SYNC OUR LOCAL REPO WITH REMOTE REPO
+$ git clone https://PAT@github.com/AkshathSuryaprakash/pfile_fe_mar25
